@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.coursera.parallel.ReciprocalArraySumTest" time="383.153" tests="4" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.5+10-b520.38"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\jbr\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\USER\Desktop\Uzair\Parallel Programming in Java\_a8c8444f81fbda0e92b62abd7429d552_miniproject_1\miniproject_1"/>
+    <property name="java.vm.vendor" value="JetBrains s.r.o"/>
+    <property name="java.vendor.url" value="https://www.jetbrains.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\USER\Desktop\Uzair\Parallel Programming in Java\_a8c8444f81fbda0e92b62abd7429d552_miniproject_1\miniproject_1"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.5+10-b520.38"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\USER\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\jbr\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Matlab\runtime\win64;D:\Matlab\bin;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\plugins\maven\lib\maven3/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="idea.version2019.3.3" value="true"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\USER"/>
+    <property name="user.timezone" value="Asia/Karachi"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="USER"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3.3 test"/>
+    <property name="java.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\jbr"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="11.0.5"/>
+    <property name="java.vendor" value="JetBrains s.r.o"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.3\plugins\maven\lib\maven3"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2019-10-15"/>
+    <property name="java.vendor.url.bug" value="https://youtrack.jetbrains.com"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testParSimpleTwoHundredMillion" classname="edu.coursera.parallel.ReciprocalArraySumTest" time="211.547">
+    <failure message="It was expected that the two-task parallel implementation would run at least 1.500000x faster, but it only achieved 1.182270x speedup" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: It was expected that the two-task parallel implementation would run at least 1.500000x faster, but it only achieved 1.182270x speedup
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParSimpleTwoHundredMillion(ReciprocalArraySumTest.java:131)
+</failure>
+    <system-out><![CDATA[par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+par called
+compute with: 0,200000000
+compute with: 0,100000000
+]]></system-out>
+  </testcase>
+  <testcase name="testParSimpleTwoMillion" classname="edu.coursera.parallel.ReciprocalArraySumTest" time="1.943">
+    <failure message="It was expected that the two-task parallel implementation would run at least 1.500000x faster, but it only achieved 0.360000x speedup" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: It was expected that the two-task parallel implementation would run at least 1.500000x faster, but it only achieved 0.360000x speedup
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParSimpleTwoMillion(ReciprocalArraySumTest.java:120)
+</failure>
+    <system-out><![CDATA[par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+par called
+compute with: 0,2000000
+compute with: 0,1000000
+]]></system-out>
+  </testcase>
+  <testcase name="testParManyTaskTwoHundredMillion" classname="edu.coursera.parallel.ReciprocalArraySumTest" time="168.698">
+    <failure message="It was expected that the many-task parallel implementation would run at least 3.200000x faster, but it only achieved 1.446602x speedup" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: It was expected that the many-task parallel implementation would run at least 3.200000x faster, but it only achieved 1.446602x speedup
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParManyTaskTwoHundredMillion(ReciprocalArraySumTest.java:155)
+</failure>
+  </testcase>
+  <testcase name="testParManyTaskTwoMillion" classname="edu.coursera.parallel.ReciprocalArraySumTest" time="0.965">
+    <failure message="It was expected that the many-task parallel implementation would run at least 2.400000x faster, but it only achieved 1.000000x speedup" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: It was expected that the many-task parallel implementation would run at least 2.400000x faster, but it only achieved 1.000000x speedup
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at edu.coursera.parallel.ReciprocalArraySumTest.testParManyTaskTwoMillion(ReciprocalArraySumTest.java:143)
+</failure>
+  </testcase>
+</testsuite>
